@@ -37,7 +37,7 @@
         padding: 0px 20px 0px 40px;
         li {
             list-style: disc;
-            color: #333;
+            color: #4d4d4d;
         }
     }
     h2 {
@@ -288,7 +288,7 @@
 .text-subtitle {
     border-left: #cdcdcd 3px solid;
     padding-left: 5px;
-    color: #333;
+    color: #4d4d4d;
     margin-top: 20px;
 }
 .block-arrow {
@@ -341,7 +341,7 @@ a {
                 background: #f1eeee;
                 margin: 0;
                 width: 100%;
-                color: #333;
+                color: #4d4d4d;
                 border: #bcbcbc 1px solid;
                 border-radius: 10px;
                 font-size: 1rem;
@@ -355,7 +355,7 @@ a {
 .article {
     font-size: 17px;
     margin: 0 auto;
-    color: #333;
+    color: #4d4d4d;
     max-width: 880px;
     background-color: none;
     overflow: hidden;
@@ -365,7 +365,7 @@ a {
     @include mobile {
         font-size: 17px;
         margin: 0 auto;
-        color: #333;
+        color: #4d4d4d;
         max-width: 100%;
         background-color: none;
         overflow: hidden;
@@ -383,95 +383,7 @@ a {
         padding: 0;
     }
 
-    .block-table {
-        display: block;
-        width: 100%;
-        overflow-x: scroll;
-
-        table.block-table__inner {
-            border: 1px solid #ffffff;
-            border-collapse: collapse;
-            width: 200%;
-
-            tbody {
-                th {
-                    border: 1px solid #f1eeee;
-                    border-collapse: collapse;
-                    padding: 20px 5px;
-                    height: 5vh;
-                    background: #d04c67;
-                    display: table-cell;
-                    text-align: center;
-                    vertical-align: middle;
-                    @include mobile{
-                        padding: 2vw 0px;
-                    }
-                }
-
-                td {
-                    border: 1px solid #f1eeee;
-                    border-collapse: collapse;
-                    padding: 5px;
-                    height: 5vh;
-                    display: table-cell;
-                    text-align: center;
-                    vertical-align: middle;
-                    background-color: #ffffff;
-                    &.first-block {
-                        background-color: #ffe8e8;
-                        padding: 0px;
-                    }
-
-                    .koushiki-site__btn_wrapper .kousiki-site__btn_block {
-                        width: 100%;
-                        background-color: #d04c67;
-                        border-radius: 40px;
-                        padding: 1rem;
-                        display: flex;
-                        justify-content: center;
-                        border-bottom: 4px solid #780018;
-                        @include mobile{
-                            width: 35vw;
-                        }
-                    }
-                    .koushiki-site__btn_wrapper .kousiki-site__btn_block:hover {
-                        opacity: 0.7;
-                        opacity: 0.7;
-                        border-bottom: 0px;
-                        border-top: 4px solid transparent;
-                        transform: translateY(4px);
-                        h2 {
-                            transform: translateY(-2px);
-                        }
-                    }
-                }
-
-                .hikaku-image__wrapper {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    img.logo-image {
-                        width: 10vw;
-                        @include mobile{
-                            width: 35vw;
-                        }
-                    }
-                    img.cam-image {
-                        width: 10vw;
-                    }
-                }
-
-                .block-table__link {
-                    display: flex;
-                    justify-content: center;
-
-                    a {
-                        color: #668ad8;
-                    }
-                }
-            }
-        }
-    }
+    
 
     .block-five-point img {
         width: 100%;
@@ -492,7 +404,7 @@ a {
             background-color: #fff;
             border-radius: 0px 0px 0px 40px;
             .ranking-header {
-                background-color: #333;
+                background-color: #4d4d4d;
                 padding: 10px 20px;
                 display: flex;
                 flex-direction: row;
@@ -512,7 +424,7 @@ a {
                 vertical-align: middle;
             }
             .ranking-content__wrapper {
-                padding: 30px;
+                padding: 1rem;
                 display: flex;
                 flex-direction: column;
                 gap: 10px;
@@ -565,6 +477,8 @@ a {
                         background-color: #f1eeee;
                         border: #ffffff solid 1px;
                         padding: 5px 10px;
+                        display: table-cell;
+                        vertical-align: middle;
                     }
                 }
                 .ranking-description__wrapper {
@@ -584,8 +498,8 @@ a {
                         position: relative;
                         overflow: hidden;
                         background-color: #23a566;
-                        border-radius: 40px;
-                        padding: 20px;
+                        border-radius: 2rem;
+                        padding: 0.75rem;
                         display: flex;
                         justify-content: center;
                         border-bottom: 4px solid darkgreen;
@@ -685,7 +599,7 @@ a {
 
     .maru-image__wrapper {
         img {
-            width: 12.5vw;
+            width: 12vw;
         }
     }
     .content-image {
@@ -767,7 +681,7 @@ a {
                                 justify-content: center;
                                 border-bottom: 4px solid darkgreen;
                                 h2.mid-txt {
-                                    font-size: 0.5rem;
+                                    font-size: 0.65rem;
                                 }
                             }
                             .kousiki-site__btn_block::before {
@@ -812,7 +726,7 @@ a {
     .container {
         font-size: 17px;
         margin: 0 auto;
-        color: #333;
+        color: #4d4d4d;
         max-width: 100%;
         background-color: none;
         overflow: hidden;

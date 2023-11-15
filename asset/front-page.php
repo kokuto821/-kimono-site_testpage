@@ -106,7 +106,7 @@
                                         $campaign_red_text = get_field('campaign_red_text');
                                 ?>
                                 <tr>
-                                    <td class="first-block fixed01"><div class="hikaku-image__wrapper rank"><?php hikaku_rank_img($ranking);?></div></td>
+                                    <td class="first-block fixed01"><div class="hikaku-image__wrapper--first"><?php hikaku_rank_img($ranking);?></div></td>
                                     <td class="fixed01"><div class="hikaku-image__wrapper"><img class="logo-image" src="<?php echo $store_logo; ?>" alt=""></div><div class="block-table__link"><a href="<?php echo $store_link;?>" class="small-txt"><?php echo $store_name;?></a></div></td>
                                     <td>
                                         <div class="kigou-text__wrapper">
@@ -117,7 +117,7 @@
                                     <td>
                                         <div class="hikaku-image__wrapper"><img class="cam-image" src="<?php echo $campaign_img; ?>" alt=""></div>
                                         <div class="block-table__link"><a href="<?php echo $store_link;?>" class="small-txt"><?php echo $store_name;?></a></div>
-                                        <div class="campaign__red-text_wrapper"><p class="c-red"><?php echo $campaign_red_text ;?></p></div>
+                                        <div class="campaign__red-text_wrapper"><p class="c-red small-txt"><?php echo $campaign_red_text ;?></p></div>
                                     </td>
                                     <td>
                                         <div class="kigou-text__wrapper">
@@ -392,9 +392,9 @@
                                     <table>
                                         <tbody>
                                             <tr>
-                                                <th>着物買取の専門性</th>
-                                                <th>買取の早さ</th>
-                                                <th>出張買取の対応</th>
+                                                <th><p class="mid-txt">着物買取の専門性</p></th>
+                                                <th><p class="mid-txt">買取の早さ</p></th>
+                                                <th><p class="mid-txt">出張買取の対応</p></th>
                                             </tr>
                                             <tr>
                                                 <td><div class="maru-image__wrapper"><img src="https://買取王国.com/wp-content/themes/kaitori/img/maru001.png" alt=""></div></td>
@@ -402,9 +402,9 @@
                                                 <td><div class="maru-image__wrapper"><img src="https://買取王国.com/wp-content/themes/kaitori/img/maru001.png" alt=""></div></td>
                                             </tr>
                                             <tr>
-                                                <th>対応エリア</th>
-                                                <th>現金の受け取り</th>
-                                                <th>事前の電話相談</th>
+                                                <th><p class="mid-txt">対応エリア</p></th>
+                                                <th><p class="mid-txt">現金の受け取り</p></th>
+                                                <th><p class="mid-txt">事前の電話相談</p></th>
                                             </tr>
                                             <tr>
                                                 <td><div class="maru-image__wrapper"><img src="https://買取王国.com/wp-content/themes/kaitori/img/maru001.png" alt=""></div></td>
@@ -436,7 +436,7 @@
                                 </div>
                                 <div class="ranking-review__link_wrapper">
                                     <div class="ranking-review__link_block">
-                                        <a class="mid-txt" href=""><?php echo $store_name;?>のレビュー＆口コミは＞＞</a>
+                                        <a class="small-txt" href=""><?php echo $store_name;?>のレビュー＆口コミは＞＞</a>
                                     </div>
                                 </div>
                             </div>
@@ -529,7 +529,7 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <p class="mid-txt mini-table_detail">
+                                            <p class="small-txt mini-table_detail">
                                                 <?php echo $mini_table_detail; ?>
                                             </p>
                                         </td>

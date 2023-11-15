@@ -91,7 +91,7 @@ a {
   padding: 0px 10px;
 }
 .block-footer .block-footer__link .footer-link {
-  color: #333;
+  color: #4d4d4d;
   font-weight: bold;
 }
 
@@ -126,10 +126,10 @@ button {
 }
 .block-button .block-button__item {
   background-color: #D04C67;
-  padding: 15px 40px;
+  padding: 0.75rem 1.5rem;
   width: -moz-fit-content;
   width: fit-content;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   border-bottom: 4px solid #780018;
 }
 .block-button .block-button__item:hover {
@@ -186,7 +186,7 @@ button {
 }
 .block-content ul li {
   list-style: disc;
-  color: #333;
+  color: #4d4d4d;
 }
 .block-content h2 {
   margin: 0px 32.5px 0px 32.5px;
@@ -427,7 +427,7 @@ button {
 .text-subtitle {
   border-left: #cdcdcd 3px solid;
   padding-left: 5px;
-  color: #333;
+  color: #4d4d4d;
   margin-top: 20px;
 }
 
@@ -479,7 +479,7 @@ a.small-txt {
   background: #f1eeee;
   margin: 0;
   width: 100%;
-  color: #333;
+  color: #4d4d4d;
   border: #bcbcbc 1px solid;
   border-radius: 10px;
   font-size: 1rem;
@@ -490,7 +490,7 @@ a.small-txt {
 .article {
   font-size: 17px;
   margin: 0 auto;
-  color: #333;
+  color: #4d4d4d;
   max-width: 880px;
   background-color: none;
   overflow: hidden;
@@ -500,7 +500,7 @@ a.small-txt {
   .container--main {
     font-size: 17px;
     margin: 0 auto;
-    color: #333;
+    color: #4d4d4d;
     max-width: 100%;
     background-color: none;
     overflow: hidden;
@@ -516,92 +516,6 @@ a.small-txt {
 .block-sections .block-sections__section {
   margin: 0;
   padding: 0;
-}
-.block-sections .block-table {
-  display: block;
-  width: 100%;
-  overflow-x: scroll;
-}
-.block-sections .block-table table.block-table__inner {
-  border: 1px solid #ffffff;
-  border-collapse: collapse;
-  width: 200%;
-}
-.block-sections .block-table table.block-table__inner tbody th {
-  border: 1px solid #f1eeee;
-  border-collapse: collapse;
-  padding: 20px 5px;
-  height: 5vh;
-  background: #d04c67;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-}
-@media screen and (max-width: 768px) {
-  .block-sections .block-table table.block-table__inner tbody th {
-    padding: 2vw 0px;
-  }
-}
-.block-sections .block-table table.block-table__inner tbody td {
-  border: 1px solid #f1eeee;
-  border-collapse: collapse;
-  padding: 5px;
-  height: 5vh;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  background-color: #ffffff;
-}
-.block-sections .block-table table.block-table__inner tbody td.first-block {
-  background-color: #ffe8e8;
-  padding: 0px;
-}
-.block-sections .block-table table.block-table__inner tbody td .koushiki-site__btn_wrapper .kousiki-site__btn_block {
-  width: 100%;
-  background-color: #d04c67;
-  border-radius: 40px;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  border-bottom: 4px solid #780018;
-}
-@media screen and (max-width: 768px) {
-  .block-sections .block-table table.block-table__inner tbody td .koushiki-site__btn_wrapper .kousiki-site__btn_block {
-    width: 35vw;
-  }
-}
-.block-sections .block-table table.block-table__inner tbody td .koushiki-site__btn_wrapper .kousiki-site__btn_block:hover {
-  opacity: 0.7;
-  opacity: 0.7;
-  border-bottom: 0px;
-  border-top: 4px solid transparent;
-  transform: translateY(4px);
-}
-.block-sections .block-table table.block-table__inner tbody td .koushiki-site__btn_wrapper .kousiki-site__btn_block:hover h2 {
-  transform: translateY(-2px);
-}
-.block-sections .block-table table.block-table__inner tbody .hikaku-image__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.block-sections .block-table table.block-table__inner tbody .hikaku-image__wrapper img.logo-image {
-  width: 10vw;
-}
-@media screen and (max-width: 768px) {
-  .block-sections .block-table table.block-table__inner tbody .hikaku-image__wrapper img.logo-image {
-    width: 35vw;
-  }
-}
-.block-sections .block-table table.block-table__inner tbody .hikaku-image__wrapper img.cam-image {
-  width: 10vw;
-}
-.block-sections .block-table table.block-table__inner tbody .block-table__link {
-  display: flex;
-  justify-content: center;
-}
-.block-sections .block-table table.block-table__inner tbody .block-table__link a {
-  color: #668ad8;
 }
 .block-sections .block-five-point img {
   width: 100%;
@@ -623,7 +537,7 @@ a.small-txt {
   border-radius: 0px 0px 0px 40px;
 }
 .block-sections .ranking-yellow__background .block-ranking__content .ranking-header {
-  background-color: #333;
+  background-color: #4d4d4d;
   padding: 10px 20px;
   display: flex;
   flex-direction: row;
@@ -643,7 +557,7 @@ a.small-txt {
   vertical-align: middle;
 }
 .block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper {
-  padding: 30px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -691,6 +605,8 @@ a.small-txt {
   background-color: #f1eeee;
   border: #ffffff solid 1px;
   padding: 5px 10px;
+  display: table-cell;
+  vertical-align: middle;
 }
 .block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .ranking-description__wrapper {
   background-color: #f1eeee;
@@ -708,8 +624,8 @@ a.small-txt {
   position: relative;
   overflow: hidden;
   background-color: #23a566;
-  border-radius: 40px;
-  padding: 20px;
+  border-radius: 2rem;
+  padding: 0.75rem;
   display: flex;
   justify-content: center;
   border-bottom: 4px solid darkgreen;
@@ -780,7 +696,7 @@ a.small-txt {
     height: 1rem;
   }
   .maru-image__wrapper img {
-    width: 12.5vw;
+    width: 12vw;
   }
   .content-image {
     padding: 20px 20px;
@@ -864,7 +780,7 @@ a.small-txt {
     border-bottom: 4px solid darkgreen;
   }
   .block-mini-table table tbody tr td .koushiki-site__btn_wrapper .kousiki-site__btn_block h2.mid-txt {
-    font-size: 0.5rem;
+    font-size: 0.65rem;
   }
   .block-mini-table table tbody tr td .mini-table__company_wrapper {
     height: 10vh;
@@ -883,7 +799,7 @@ a.small-txt {
   .container {
     font-size: 17px;
     margin: 0 auto;
-    color: #333;
+    color: #4d4d4d;
     max-width: 100%;
     background-color: none;
     overflow: hidden;
@@ -917,6 +833,109 @@ a.small-txt {
   }
 
 }
+.block-table {
+  display: block;
+  width: 100%;
+  overflow-x: scroll;
+}
+.block-table table.block-table__inner {
+  border: 1px solid #ffffff;
+  border-collapse: collapse;
+  width: 200%;
+}
+.block-table table.block-table__inner tbody th {
+  border: 1px solid #f1eeee;
+  border-collapse: collapse;
+  padding: 20px 5px;
+  height: 5vh;
+  background: #d04c67;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+@media screen and (max-width: 768px) {
+  .block-table table.block-table__inner tbody th {
+    padding: 2vw 0px;
+  }
+}
+.block-table table.block-table__inner tbody td {
+  border: 1px solid #f1eeee;
+  border-collapse: collapse;
+  padding: 5px;
+  height: 5vh;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #ffffff;
+}
+@media screen and (max-width: 768px) {
+  .block-table table.block-table__inner tbody td {
+    min-width: 30vw;
+  }
+}
+.block-table table.block-table__inner tbody td.first-block {
+  background-color: #ffe8e8;
+  padding: 0px;
+}
+.block-table table.block-table__inner tbody td .koushiki-site__btn_wrapper .kousiki-site__btn_block {
+  width: 100%;
+  background-color: #d04c67;
+  border-radius: 40px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px solid #780018;
+}
+@media screen and (max-width: 768px) {
+  .block-table table.block-table__inner tbody td .koushiki-site__btn_wrapper .kousiki-site__btn_block {
+    width: 45vw;
+  }
+}
+.block-table table.block-table__inner tbody td .koushiki-site__btn_wrapper .kousiki-site__btn_block:hover {
+  opacity: 0.7;
+  opacity: 0.7;
+  border-bottom: 0px;
+  border-top: 4px solid transparent;
+  transform: translateY(4px);
+}
+.block-table table.block-table__inner tbody td .koushiki-site__btn_wrapper .kousiki-site__btn_block:hover h2 {
+  transform: translateY(-2px);
+}
+.block-table table.block-table__inner tbody .hikaku-image__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-table table.block-table__inner tbody .hikaku-image__wrapper img.logo-image {
+  width: 10vw;
+}
+@media screen and (max-width: 768px) {
+  .block-table table.block-table__inner tbody .hikaku-image__wrapper img.logo-image {
+    width: 35vw;
+  }
+}
+.block-table table.block-table__inner tbody .hikaku-image__wrapper img.cam-image {
+  width: 10vw;
+}
+@media screen and (max-width: 768px) {
+  .block-table table.block-table__inner tbody .hikaku-image__wrapper img.cam-image {
+    width: 30vw;
+  }
+}
+.block-table table.block-table__inner tbody .first-block {
+  min-width: 20vw;
+}
+.block-table table.block-table__inner tbody .first-block .hikaku-image__wrapper--first img {
+  width: 12vw;
+}
+.block-table table.block-table__inner tbody .block-table__link {
+  display: flex;
+  justify-content: center;
+}
+.block-table table.block-table__inner tbody .block-table__link a {
+  color: #668ad8;
+}
+
 .search_wrapper {
   width: 90%;
   margin: 0 auto;
