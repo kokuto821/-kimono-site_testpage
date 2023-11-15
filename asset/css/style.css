@@ -900,7 +900,7 @@ a.small-txt {
 .block-content {
   width: 95%;
 }
-.block-content p {
+.block-content p.block-content__search-p {
   padding: 10px 0px;
 }
 
