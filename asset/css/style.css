@@ -54,9 +54,14 @@ table {
 }
 
 body {
-  font-size: 15px;
+  font-size: 17px;
   scroll-behavior: smooth;
   font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "游ゴシック", "Yu Gothic", "ＭＳＰゴシック", "MS PGothic", sans-serif;
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
 }
 
 br {
@@ -77,6 +82,15 @@ main {
 a {
   text-decoration: none;
   color: #668ad8;
+}
+
+p {
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 0.9rem;
+  }
 }
 
 .block-footer {
@@ -174,7 +188,6 @@ button {
 }
 .block-content p {
   padding: 0px 40px 0px 40px;
-  font-size: 16px;
 }
 @media screen and (max-width: 768px) {
   .block-content p {
@@ -488,7 +501,6 @@ a.small-txt {
 }
 
 .article {
-  font-size: 17px;
   margin: 0 auto;
   color: #4d4d4d;
   max-width: 880px;
@@ -923,10 +935,20 @@ a.small-txt {
   }
 }
 .block-table table.block-table__inner tbody .first-block {
-  min-width: 20vw;
+  min-width: 10vw;
+}
+@media screen and (max-width: 768px) {
+  .block-table table.block-table__inner tbody .first-block {
+    min-width: 20vw;
+  }
 }
 .block-table table.block-table__inner tbody .first-block .hikaku-image__wrapper--first img {
-  width: 12vw;
+  width: 6vw;
+}
+@media screen and (max-width: 768px) {
+  .block-table table.block-table__inner tbody .first-block .hikaku-image__wrapper--first img {
+    width: 12vw;
+  }
 }
 .block-table table.block-table__inner tbody .block-table__link {
   display: flex;
@@ -1014,7 +1036,7 @@ h2.mid-txt {
   font-size: 1.3rem;
 }
 h2.mid-txt2 {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
 }
 h2.small-txt {
   font-size: 1rem;
@@ -1041,11 +1063,11 @@ p.mid-txt {
 }
 
 p.small-txt {
-  font-size: 11px;
+  font-size: 0.8rem;
 }
 
 a.mid-txt {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .bold {
