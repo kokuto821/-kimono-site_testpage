@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+body {
+    font-size: 15px;
+    scroll-behavior: smooth;
+    font-family: 'Noto Sans JP', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳＰゴシック', 'MS PGothic', sans-serif;
+}
+br {
+  display: block;
+  content: "";
+  margin: 10px 0;
+  }
+h2 {
+  font-weight: bold;
+  color: #fff;
+}
+
+main {
+  box-sizing: border-box;
+}
+a{
+  text-decoration:none;
+  color: #668ad8;
+}
+

@@ -1,0 +1,868 @@
+@import "../Foundation/_mixin.scss";
+
+.block-content {
+    background-color: #fff;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: #e5e5e5 solid 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 0px 40px 0px;
+    margin-bottom: 20px;
+    @include mobile {
+        margin-bottom: 0px;
+        padding: 20px 0px 20px 0px;
+    }
+    .block-content__quote {
+        padding: 20px 0px 20px 0px;
+        margin: 0px 40px;
+        background-color: #f1eeee;
+        border-radius: 20px;
+        @include mobile {
+            padding: 20px 0px 20px 0px;
+            margin: 0px 20px;
+        }
+    }
+
+    p {
+        padding: 0px 40px 0px 40px;
+        font-size: 16px;
+        @include mobile {
+            padding: 0px 20px 0px 20px;
+        }
+    }
+    ul {
+        padding: 0px 20px 0px 40px;
+        li {
+            list-style: disc;
+            color: #333;
+        }
+    }
+    h2 {
+        margin: 0px 32.5px 0px 32.5px;
+        @include mobile {
+            margin: 0px 10px 0px 12.5px;
+        }
+    }
+}
+
+.yellow-midashi_wrapper {
+    background-color: #ebb429;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    .yellow-midashi {
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 20px 40px;
+        text-align: center;
+    }
+}
+.search-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.block-title {
+    background-color: #3f312b;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 20px;
+    background-image: url(../image/sankuzushi.png);
+    background-repeat: repeat-x;
+    opacity: 1;
+    .block-midashi_background-image {
+    }
+    .block-midashi {
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 20px 4px;
+        text-align: center;
+    }
+    .block-title__icon {
+        padding-right: 2px;
+        img {
+            transform: translateY(0.35vh);
+            fill: #fff;
+            height: 1.2rem;
+        }
+    }
+}
+
+.block-mini-table {
+    padding: 20px 40px;
+    height: 60vh;
+    @include mobile {
+        gap: 0px;
+        padding: 20px 10px;
+        height: 48vh;
+    }
+    table {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 55vh;
+        justify-content: center;
+        align-items: center;
+        @include mobile {
+            height: 42.5vh;
+        }
+        tbody {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            width: 100%;
+            gap: 0px;
+            tr {
+                width: 100%;
+                th {
+                    background-color: #cacaca;
+                    border: rgba(0, 0, 0, 0) 1px solid;
+                    border-radius: 15px 15px 0 0;
+                    font-size: 2vh;
+                    width: 33.3vw;
+                    height: 5vh;
+                    display: table-cell;
+                    vertical-align: middle;
+                    img {
+                        height: 5vh;
+                    }
+                }
+                td {
+                    width: 33.3vw;
+                    display: table-cell;
+                    text-align: center;
+                    font-size: 0.9em;
+                    line-height: 1.5;
+                    vertical-align: baseline;
+                    padding: 4px;
+                    background-color: #ffffff;
+                    .mini-table_detail {
+                        height: 18vh;
+                        text-align: left;
+                        padding: 5px;
+                        @include mobile {
+                            height: 20vh;
+                        }
+                    }
+                    a {
+                        display: inline-block;
+                    }
+                    .koushiki-site__btn_wrapper {
+                        width: 80%;
+                        margin: 0 auto;
+                        .kousiki-site__btn_block {
+                            width: 100%;
+                            position: relative;
+                            overflow: hidden;
+                            background-color: #23a566;
+                            border-radius: 40px;
+                            padding: 10px;
+                            margin-bottom: 10px;
+                            display: flex;
+                            justify-content: center;
+                            border-bottom: 4px solid darkgreen;
+                            @include mobile {
+                                h2.mid-txt {
+                                    font-size: 0.5rem;
+                                }
+                            }
+                        }
+                        .kousiki-site__btn_block:hover {
+                            opacity: 0.7;
+                            opacity: 0.7;
+                            border-bottom: 0px;
+                            border-top: 4px solid transparent;
+                            transform: translateY(4px);
+                            h2 {
+                                transform: translateY(-2px);
+                            }
+                        }
+                        .kousiki-site__btn_block::before {
+                            // content: '';
+                            //   /*絶対配置でキラッと光るの位置を決める*/
+                            // position: absolute;
+                            // top: 0;
+                            // left: -75%;
+                            //   /*キラッと光る形状*/
+                            //   width: 50%;
+                            // height: 100%;
+                            // background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+                            // transform: skewX(-25deg);
+                            //       /* アニメーション */
+                        }
+                        .kousiki-site__btn_block:hover::before {
+                            // animation: shine 0.7s;
+                            // transform: translateY(5px);
+                        }
+                    }
+                    .block-mini-table__company {
+                        height: 20vh;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        @include mobile {
+                            height: 10vh;
+                        }
+                        .mini-table__company-image_wrapper {
+                            display: flex;
+                            justify-content: center;
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.search-icon {
+    padding-right: 2px;
+
+    img {
+        transform: translateY(0.15vh);
+        fill: #fff;
+        height: 1.2rem;
+    }
+}
+
+.block-button__icon {
+    margin: 0 auto;
+    margin-top: -7px;
+    margin-bottom: -10px;
+
+    img {
+        height: 10px;
+    }
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.content-image {
+    padding: 0px 200px;
+    img {
+        width: 100%;
+    }
+}
+.content-image_n02 {
+    padding: 0px 200px;
+    img {
+        width: 100%;
+    }
+}
+.kigou-text__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.maru-image__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    img {
+        width: 4.5vw;
+    }
+}
+.fixed01 {
+    // position: sticky;
+    // left: 0;
+}
+.text-subtitle {
+    border-left: #cdcdcd 3px solid;
+    padding-left: 5px;
+    color: #333;
+    margin-top: 20px;
+}
+.block-arrow {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    .block-arrow__item {
+        img {
+            width: 100px;
+        }
+    }
+}
+.scroll_up {
+    transition: 1.2s ease-in-out;
+    transform: translateY(-30px);
+    opacity: 0;
+}
+.scroll_up.on {
+    transform: translateY(0);
+    opacity: 1;
+}
+.slide {
+}
+a {
+    &.mid-txt {
+        font-size: 1.2rem;
+    }
+    &.small-txt {
+        font-size: 1.2rem;
+    }
+}
+////////////////////////////////////////////////////////////////////////
+.body {
+    background-color: rgb(255, 250, 250);
+    background-image: url("./image/japanese-paper_pink.jpg");
+}
+
+.block-search {
+    display: flex;
+    justify-content: center;
+    form {
+        table {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            text-align: left;
+            select {
+                background: #f1eeee;
+                margin: 0;
+                width: 100%;
+                color: #333;
+                border: #bcbcbc 1px solid;
+                border-radius: 10px;
+                font-size: 1rem;
+                padding: 10px 15px;
+                margin: 0 5px 5px 0;
+            }
+        }
+    }
+}
+
+.article {
+    font-size: 17px;
+    margin: 0 auto;
+    color: #333;
+    max-width: 880px;
+    background-color: none;
+    overflow: hidden;
+}
+
+.container--main {
+    @include mobile {
+        font-size: 17px;
+        margin: 0 auto;
+        color: #333;
+        max-width: 100%;
+        background-color: none;
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+}
+
+.block-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .block-sections__section {
+        margin: 0;
+        padding: 0;
+    }
+
+    .block-table {
+        display: block;
+        width: 100%;
+        overflow-x: scroll;
+
+        table.block-table__inner {
+            border: 1px solid #ffffff;
+            border-collapse: collapse;
+            width: 200%;
+
+            tbody {
+                th {
+                    border: 1px solid #f1eeee;
+                    border-collapse: collapse;
+                    padding: 20px 5px;
+                    height: 5vh;
+                    background: #d04c67;
+                    display: table-cell;
+                    text-align: center;
+                    vertical-align: middle;
+                }
+
+                td {
+                    border: 1px solid #f1eeee;
+                    border-collapse: collapse;
+                    padding: 5px;
+                    height: 5vh;
+                    display: table-cell;
+                    text-align: center;
+                    vertical-align: middle;
+                    background-color: #ffffff;
+                    &.first-block {
+                        background-color: #ffe8e8;
+                    }
+
+                    .koushiki-site__btn_wrapper .kousiki-site__btn_block {
+                        width: 100%;
+                        background-color: #d04c67;
+                        border-radius: 40px;
+                        padding: 1rem;
+                        display: flex;
+                        justify-content: center;
+                        border-bottom: 4px solid #780018;
+                    }
+                    .koushiki-site__btn_wrapper .kousiki-site__btn_block:hover {
+                        opacity: 0.7;
+                        opacity: 0.7;
+                        border-bottom: 0px;
+                        border-top: 4px solid transparent;
+                        transform: translateY(4px);
+                        h2 {
+                            transform: translateY(-2px);
+                        }
+                    }
+                }
+
+                .hikaku-image__wrapper {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img.logo-image {
+                        width: 10vw;
+                    }
+                    img.cam-image {
+                        width: 10vw;
+                    }
+                }
+
+                .block-table__link {
+                    display: flex;
+                    justify-content: center;
+
+                    a {
+                        color: #668ad8;
+                    }
+                }
+            }
+        }
+    }
+
+    .block-five-point img {
+        width: 100%;
+        background-color: #fff;
+    }
+    .block-ranking__inner {
+        width: 100%;
+        background-color: #f5f5dc;
+        padding: 20px;
+        border-radius: 0px 40px 0px 40px;
+    }
+    .ranking-yellow__background {
+        width: 100%;
+        background-color: #f5f5dc;
+        padding: 20px;
+
+        .block-ranking__content {
+            background-color: #fff;
+            border-radius: 0px 0px 0px 40px;
+            .ranking-header {
+                background-color: #333;
+                padding: 10px 20px;
+                display: flex;
+                flex-direction: row;
+                img {
+                    height: 4vh;
+                    margin-right: 10px;
+                    margin-top: 3px;
+                }
+                h2 {
+                    margin-top: 5px;
+                }
+            }
+            .rankig-flex__wrapper {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                vertical-align: middle;
+            }
+            .ranking-content__wrapper {
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .ranking-image__frame {
+                    border: #f0f0f0 solid 2px;
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .ranking-point__frame {
+                    border: #d04c67 2px solid;
+
+                    .ranking-point__header {
+                        background-color: #d04c67;
+                        padding: 10px 20px;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    ul {
+                        padding: 10px;
+                        li {
+                            margin-left: 25px;
+                            text-indent: -1.45em;
+                        }
+                        li::before {
+                            content: "✔";
+                            color: #d04c67;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+
+                .ranking-title__wrapper {
+                    display: flex;
+                    justify-content: center;
+
+                    .red-title__block h2 {
+                        color: #d04c67;
+                        font-weight: bold;
+                    }
+                }
+
+                .ranking-table__wrapper {
+                    display: flex;
+                    justify-content: center;
+
+                    table tr th {
+                        background-color: #f1eeee;
+                        border: #ffffff solid 1px;
+                        padding: 5px 10px;
+                    }
+                }
+                .ranking-description__wrapper {
+                    background-color: #f1eeee;
+                    border-radius: 0px 0px 0px 0px;
+                    border-top: #d04c67 2px solid;
+                    padding: 20px;
+                }
+                @keyframes shine {
+                    100% {
+                        left: 125%;
+                    }
+                }
+                .koushiki-site__btn_wrapper {
+                    .kousiki-site__btn_block {
+                        width: 100%;
+                        position: relative;
+                        overflow: hidden;
+                        background-color: #23a566;
+                        border-radius: 40px;
+                        padding: 20px;
+                        display: flex;
+                        justify-content: center;
+                        border-bottom: 4px solid darkgreen;
+                    }
+                    .kousiki-site__btn_block:hover {
+                        opacity: 0.7;
+                        opacity: 0.7;
+                        border-bottom: 0px;
+                        border-top: 4px solid transparent;
+                        transform: translateY(4px);
+                        h2 {
+                            transform: translateY(-2px);
+                        }
+                    }
+                    .kousiki-site__btn_block::before {
+                        //   content: '';
+                        //   /*絶対配置でキラッと光るの位置を決める*/
+                        // position: absolute;
+                        // top: 0;
+                        // left: -75%;
+                        //   /*キラッと光る形状*/
+                        //   width: 50%;
+                        // height: 100%;
+                        // background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+                        // transform: skewX(-25deg);
+                        /* アニメーション */
+                    }
+                    .kousiki-site__btn_block:hover::before {
+                        // animation: shine 0.7s;
+                        // transform: translateY(5px);
+                    }
+                }
+                .ranking-review__link_wrapper {
+                    display: flex;
+                    justify-content: right;
+
+                    .ranking-review__link_block a {
+                        color: #668ad8;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.n8 {
+    .block-content {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        padding: 0px;
+        picture {
+            img {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content__white_wrapper {
+        background-color: #fff;
+        width: 95%;
+        margin: 0 auto;
+        border: #e5e5e5 solid 1px;
+        margin-bottom: 0px;
+        padding: 20px 0px 20px 0px;
+        .quote__block {
+            padding: 20px 0px 20px 0px;
+            margin: 0px 20px;
+            background-color: #f1eeee;
+            border-radius: 20px;
+        }
+        p {
+            padding: 0px 20px 0px 20px;
+            font-size: 16px;
+        }
+        h2 {
+            margin: 0px 10px 0px 12.5px;
+        }
+    }
+
+    h2 {
+        &.mid-txt {
+            font-size: 1.2rem;
+        }
+        &.mid-txt2 {
+            font-size: 1rem;
+        }
+        &.small-txt {
+            font-size: 0.7rem;
+        }
+    }
+    .search-icon img {
+        height: 1rem;
+    }
+
+    .maru-image__wrapper {
+        img {
+            width: 12.5vw;
+        }
+    }
+    .content-image {
+        padding: 20px 20px;
+    }
+    .content-image_n02 {
+        padding: 20px 40px;
+        img {
+            width: 100%;
+        }
+    }
+    a {
+        &.mid-txt {
+            font-size: 1rem;
+        }
+        &.small-txt {
+            font-size: 0.85rem;
+        }
+    }
+    p {
+        &.mid-txt {
+            font-size: 0.8rem;
+        }
+    }
+    .mini-table__wrapper {
+        gap: 0px;
+        padding: 20px 10px;
+        height: 48vh;
+        table {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            height: 42.5vh;
+            justify-content: center;
+            align-items: center;
+            tbody {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 100%;
+                gap: 0px;
+                tr {
+                    width: 100%;
+                    th {
+                        border: rgba(0, 0, 0, 0) 1px solid;
+                        border-radius: 15px 15px 0 0;
+                        font-size: 2vh;
+                        width: 33.3vw;
+                        height: 5vh;
+                        display: table-cell;
+                        vertical-align: middle;
+                    }
+                    td {
+                        width: 33.3vw;
+                        display: table-cell;
+                        text-align: center;
+                        font-size: 0.9em;
+                        line-height: 1.5;
+                        vertical-align: baseline;
+                        padding: 4px;
+                        background-color: #ffffff;
+                        .mini-table_detail {
+                            height: 20vh;
+                        }
+                        a {
+                            display: inline-block;
+                        }
+                        .koushiki-site__btn_wrapper {
+                            width: 80%;
+                            margin: 0 auto;
+                            .kousiki-site__btn_block {
+                                width: 100%;
+                                position: relative;
+                                overflow: hidden;
+                                background-color: #23a566;
+                                border-radius: 40px;
+                                padding: 10px;
+                                display: flex;
+                                justify-content: center;
+                                border-bottom: 4px solid darkgreen;
+                                h2.mid-txt {
+                                    font-size: 0.5rem;
+                                }
+                            }
+                            .kousiki-site__btn_block::before {
+                                //   content: '';
+                                //   /*絶対配置でキラッと光るの位置を決める*/
+                                // position: absolute;
+                                // top: 0;
+                                // left: -75%;
+                                //   /*キラッと光る形状*/
+                                //   width: 50%;
+                                // height: 100%;
+                                // background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+                                // transform: skewX(-25deg);
+                                //       /* アニメーション */
+                            }
+                            .kousiki-site__btn_block:hover::before {
+                                // animation: shine 0.7s;
+                                // transform: translateY(5px);
+                            }
+                        }
+                        .mini-table__company_wrapper {
+                            height: 10vh;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                            .mini-table__company-image_wrapper {
+                                display: flex;
+                                justify-content: center;
+                                img {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ////////////////////////////////////////////////////////////
+    .container--main {
+        font-size: 17px;
+        margin: 0 auto;
+        color: #333;
+        max-width: 100%;
+        background-color: none;
+        overflow: hidden;
+        overflow-x: hidden;
+    }
+    .section__wrapper {
+        .ranking-yellow__background {
+            .ranking-white__background {
+                .ranking-content__wrapper {
+                    padding: 10px;
+                    .content-image {
+                        padding: 0px 0px;
+                    }
+                }
+            }
+        }
+        .hikakuhyo-table__wrapper {
+            display: block;
+            width: 100%;
+            overflow-x: scroll;
+
+            table.hikakuhyo-table {
+                tbody {
+                    th {
+                        padding: 10px;
+                    }
+                    td {
+                        &.td_first-block {
+                        }
+                        .koushiki-site__btn_wrapper {
+                            .kousiki-site__btn_block {
+                            }
+                        }
+                    }
+                    .hikaku-image__wrapper {
+                        img.logo-image {
+                            width: 30vw;
+                        }
+                        img.cam-image {
+                            width: 40vw;
+                        }
+                    }
+                    .store-name__link_wrapper {
+                        a {
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section__wrapper {
+        .hikakuhyo-table__wrapper table.hikakuhyo-table {
+            width: 360%;
+        }
+
+        .ranking-yellow__background
+            .ranking-white__background
+            .ranking-table__wrapper
+            table
+            tr
+            td
+            .maru-image__wrapper
+            img {
+            width: 10vw;
+        }
+    }
+
+    /*# sourceMappingURL=responsible.css.map */
+}

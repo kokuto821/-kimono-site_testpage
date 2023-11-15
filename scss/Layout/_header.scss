@@ -1,0 +1,14 @@
+.block-header-image img {
+    width: 100%;
+  }
+.header-cover{
+    background-color: #D04C67;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    h2{
+        width: fit-content;
+        padding: 10px 25px;
+        text-align: center;
+    }
+}

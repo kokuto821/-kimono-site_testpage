@@ -1,0 +1,1009 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.6;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-size: 15px;
+  scroll-behavior: smooth;
+  font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "游ゴシック", "Yu Gothic", "ＭＳＰゴシック", "MS PGothic", sans-serif;
+}
+
+br {
+  display: block;
+  content: "";
+  margin: 10px 0;
+}
+
+h2 {
+  font-weight: bold;
+  color: #fff;
+}
+
+main {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #668ad8;
+}
+
+.block-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  background-color: #f1eeee;
+}
+.block-footer .block-footer__link {
+  padding: 0px 10px;
+}
+.block-footer .block-footer__link .footer-link {
+  color: #333;
+  font-weight: bold;
+}
+
+.block-header-image img {
+  width: 100%;
+}
+
+.header-cover {
+  background-color: #D04C67;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+.header-cover h2 {
+  width: fit-content;
+  padding: 10px 25px;
+  text-align: center;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+  appearance: none;
+}
+
+.block-button {
+  margin: 0 auto;
+  height: fit-content;
+}
+.block-button .block-button__item {
+  background-color: #D04C67;
+  padding: 15px 40px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 15px;
+  border-bottom: 4px solid #780018;
+}
+.block-button .block-button__item:hover {
+  opacity: 0.7;
+  border-bottom: 0px;
+  border-top: 4px solid transparent;
+  transform: translateY(4px);
+}
+.block-button .block-button__item:hover h2 {
+  transform: translateY(-2px);
+}
+
+.block-content {
+  background-color: #fff;
+  width: 95%;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: #e5e5e5 solid 1px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0px 40px 0px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .block-content {
+    margin-bottom: 0px;
+    padding: 20px 0px 20px 0px;
+  }
+}
+.block-content .block-content__quote {
+  padding: 20px 0px 20px 0px;
+  margin: 0px 40px;
+  background-color: #f1eeee;
+  border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  .block-content .block-content__quote {
+    padding: 20px 0px 20px 0px;
+    margin: 0px 20px;
+  }
+}
+.block-content p {
+  padding: 0px 40px 0px 40px;
+  font-size: 16px;
+}
+@media screen and (max-width: 768px) {
+  .block-content p {
+    padding: 0px 20px 0px 20px;
+  }
+}
+.block-content ul {
+  padding: 0px 20px 0px 40px;
+}
+.block-content ul li {
+  list-style: disc;
+  color: #333;
+}
+.block-content h2 {
+  margin: 0px 32.5px 0px 32.5px;
+}
+@media screen and (max-width: 768px) {
+  .block-content h2 {
+    margin: 0px 10px 0px 12.5px;
+  }
+}
+
+.yellow-midashi_wrapper {
+  background-color: #ebb429;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.yellow-midashi_wrapper .yellow-midashi {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.block-title {
+  background-color: #3f312b;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 20px;
+  background-image: url(../image/sankuzushi.png);
+  background-repeat: repeat-x;
+  opacity: 1;
+}
+.block-title .block-midashi {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 20px 4px;
+  text-align: center;
+}
+.block-title .block-title__icon {
+  padding-right: 2px;
+}
+.block-title .block-title__icon img {
+  transform: translateY(0.35vh);
+  fill: #fff;
+  height: 1.2rem;
+}
+
+.block-mini-table {
+  padding: 20px 40px;
+  height: 60vh;
+}
+@media screen and (max-width: 768px) {
+  .block-mini-table {
+    gap: 0px;
+    padding: 20px 10px;
+    height: 48vh;
+  }
+}
+.block-mini-table table {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 55vh;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .block-mini-table table {
+    height: 42.5vh;
+  }
+}
+.block-mini-table table tbody {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  gap: 0px;
+}
+.block-mini-table table tbody tr {
+  width: 100%;
+}
+.block-mini-table table tbody tr th {
+  background-color: #cacaca;
+  border: rgba(0, 0, 0, 0) 1px solid;
+  border-radius: 15px 15px 0 0;
+  font-size: 2vh;
+  width: 33.3vw;
+  height: 5vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+.block-mini-table table tbody tr th img {
+  height: 5vh;
+}
+.block-mini-table table tbody tr td {
+  width: 33.3vw;
+  display: table-cell;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.5;
+  vertical-align: baseline;
+  padding: 4px;
+  background-color: #ffffff;
+}
+.block-mini-table table tbody tr td .mini-table_detail {
+  height: 18vh;
+  text-align: left;
+  padding: 5px;
+}
+@media screen and (max-width: 768px) {
+  .block-mini-table table tbody tr td .mini-table_detail {
+    height: 20vh;
+  }
+}
+.block-mini-table table tbody tr td a {
+  display: inline-block;
+}
+.block-mini-table table tbody tr td .koushiki-site__btn_wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+.block-mini-table table tbody tr td .koushiki-site__btn_wrapper .kousiki-site__btn_block {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #23a566;
+  border-radius: 40px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px solid darkgreen;
+}
+@media screen and (max-width: 768px) {
+  .block-mini-table table tbody tr td .koushiki-site__btn_wrapper .kousiki-site__btn_block h2.mid-txt {
+    font-size: 0.5rem;
+  }
+}
+.block-mini-table table tbody tr td .koushiki-site__btn_wrapper .kousiki-site__btn_block:hover {
+  opacity: 0.7;
+  opacity: 0.7;
+  border-bottom: 0px;
+  border-top: 4px solid transparent;
+  transform: translateY(4px);
+}
+.block-mini-table table tbody tr td .koushiki-site__btn_wrapper .kousiki-site__btn_block:hover h2 {
+  transform: translateY(-2px);
+}
+.block-mini-table table tbody tr td .block-mini-table__company {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .block-mini-table table tbody tr td .block-mini-table__company {
+    height: 10vh;
+  }
+}
+.block-mini-table table tbody tr td .block-mini-table__company .mini-table__company-image_wrapper {
+  display: flex;
+  justify-content: center;
+}
+.block-mini-table table tbody tr td .block-mini-table__company .mini-table__company-image_wrapper img {
+  width: 100%;
+}
+
+.search-icon {
+  padding-right: 2px;
+}
+.search-icon img {
+  transform: translateY(0.15vh);
+  fill: #fff;
+  height: 1.2rem;
+}
+
+.block-button__icon {
+  margin: 0 auto;
+  margin-top: -7px;
+  margin-bottom: -10px;
+}
+.block-button__icon img {
+  height: 10px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-image {
+  padding: 0px 200px;
+}
+.content-image img {
+  width: 100%;
+}
+
+.content-image_n02 {
+  padding: 0px 200px;
+}
+.content-image_n02 img {
+  width: 100%;
+}
+
+.kigou-text__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.maru-image__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.maru-image__wrapper img {
+  width: 4.5vw;
+}
+
+.text-subtitle {
+  border-left: #cdcdcd 3px solid;
+  padding-left: 5px;
+  color: #333;
+  margin-top: 20px;
+}
+
+.block-arrow {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.block-arrow .block-arrow__item img {
+  width: 100px;
+}
+
+.scroll_up {
+  transition: 1.2s ease-in-out;
+  transform: translateY(-30px);
+  opacity: 0;
+}
+
+.scroll_up.on {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+a.mid-txt {
+  font-size: 1.2rem;
+}
+a.small-txt {
+  font-size: 1.2rem;
+}
+
+.body {
+  background-color: rgb(255, 250, 250);
+  background-image: url("./image/japanese-paper_pink.jpg");
+}
+
+.block-search {
+  display: flex;
+  justify-content: center;
+}
+.block-search form table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: left;
+}
+.block-search form table select {
+  background: #f1eeee;
+  margin: 0;
+  width: 100%;
+  color: #333;
+  border: #bcbcbc 1px solid;
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 10px 15px;
+  margin: 0 5px 5px 0;
+}
+
+.article {
+  font-size: 17px;
+  margin: 0 auto;
+  color: #333;
+  max-width: 880px;
+  background-color: none;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+  .container--main {
+    font-size: 17px;
+    margin: 0 auto;
+    color: #333;
+    max-width: 100%;
+    background-color: none;
+    overflow: hidden;
+    overflow-x: hidden;
+  }
+}
+
+.block-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.block-sections .block-sections__section {
+  margin: 0;
+  padding: 0;
+}
+.block-sections .block-table {
+  display: block;
+  width: 100%;
+  overflow-x: scroll;
+}
+.block-sections .block-table table.block-table__inner {
+  border: 1px solid #ffffff;
+  border-collapse: collapse;
+  width: 200%;
+}
+.block-sections .block-table table.block-table__inner tbody th {
+  border: 1px solid #f1eeee;
+  border-collapse: collapse;
+  padding: 20px 5px;
+  height: 5vh;
+  background: #d04c67;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.block-sections .block-table table.block-table__inner tbody td {
+  border: 1px solid #f1eeee;
+  border-collapse: collapse;
+  padding: 5px;
+  height: 5vh;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #ffffff;
+}
+.block-sections .block-table table.block-table__inner tbody td.first-block {
+  background-color: #ffe8e8;
+}
+.block-sections .block-table table.block-table__inner tbody td .koushiki-site__btn_wrapper .kousiki-site__btn_block {
+  width: 100%;
+  background-color: #d04c67;
+  border-radius: 40px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px solid #780018;
+}
+.block-sections .block-table table.block-table__inner tbody td .koushiki-site__btn_wrapper .kousiki-site__btn_block:hover {
+  opacity: 0.7;
+  opacity: 0.7;
+  border-bottom: 0px;
+  border-top: 4px solid transparent;
+  transform: translateY(4px);
+}
+.block-sections .block-table table.block-table__inner tbody td .koushiki-site__btn_wrapper .kousiki-site__btn_block:hover h2 {
+  transform: translateY(-2px);
+}
+.block-sections .block-table table.block-table__inner tbody .hikaku-image__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block-sections .block-table table.block-table__inner tbody .hikaku-image__wrapper img.logo-image {
+  width: 10vw;
+}
+.block-sections .block-table table.block-table__inner tbody .hikaku-image__wrapper img.cam-image {
+  width: 10vw;
+}
+.block-sections .block-table table.block-table__inner tbody .block-table__link {
+  display: flex;
+  justify-content: center;
+}
+.block-sections .block-table table.block-table__inner tbody .block-table__link a {
+  color: #668ad8;
+}
+.block-sections .block-five-point img {
+  width: 100%;
+  background-color: #fff;
+}
+.block-sections .block-ranking__inner {
+  width: 100%;
+  background-color: #f5f5dc;
+  padding: 20px;
+  border-radius: 0px 40px 0px 40px;
+}
+.block-sections .ranking-yellow__background {
+  width: 100%;
+  background-color: #f5f5dc;
+  padding: 20px;
+}
+.block-sections .ranking-yellow__background .block-ranking__content {
+  background-color: #fff;
+  border-radius: 0px 0px 0px 40px;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-header {
+  background-color: #333;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: row;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-header img {
+  height: 4vh;
+  margin-right: 10px;
+  margin-top: 3px;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-header h2 {
+  margin-top: 5px;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .rankig-flex__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .ranking-image__frame {
+  border: #f0f0f0 solid 2px;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .ranking-image__frame img {
+  width: 100%;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .ranking-point__frame {
+  border: #d04c67 2px solid;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .ranking-point__frame .ranking-point__header {
+  background-color: #d04c67;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .ranking-point__frame ul {
+  padding: 10px;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .ranking-point__frame ul li {
+  margin-left: 25px;
+  text-indent: -1.45em;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .ranking-point__frame ul li::before {
+  content: "✔";
+  color: #d04c67;
+  margin-right: 10px;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .ranking-title__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .ranking-title__wrapper .red-title__block h2 {
+  color: #d04c67;
+  font-weight: bold;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .ranking-table__wrapper {
+  display: flex;
+  justify-content: center;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .ranking-table__wrapper table tr th {
+  background-color: #f1eeee;
+  border: #ffffff solid 1px;
+  padding: 5px 10px;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .ranking-description__wrapper {
+  background-color: #f1eeee;
+  border-radius: 0px 0px 0px 0px;
+  border-top: #d04c67 2px solid;
+  padding: 20px;
+}
+@keyframes shine {
+  100% {
+    left: 125%;
+  }
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .koushiki-site__btn_wrapper .kousiki-site__btn_block {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #23a566;
+  border-radius: 40px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 4px solid darkgreen;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .koushiki-site__btn_wrapper .kousiki-site__btn_block:hover {
+  opacity: 0.7;
+  opacity: 0.7;
+  border-bottom: 0px;
+  border-top: 4px solid transparent;
+  transform: translateY(4px);
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .koushiki-site__btn_wrapper .kousiki-site__btn_block:hover h2 {
+  transform: translateY(-2px);
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .koushiki-site__btn_wrapper .kousiki-site__btn_block::before {
+  /* アニメーション */
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .ranking-review__link_wrapper {
+  display: flex;
+  justify-content: right;
+}
+.block-sections .ranking-yellow__background .block-ranking__content .ranking-content__wrapper .ranking-review__link_wrapper .ranking-review__link_block a {
+  color: #668ad8;
+}
+
+.n8 .block-content {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  padding: 0px;
+}
+.n8 .block-content picture img {
+  width: 100%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .content__white_wrapper {
+    background-color: #fff;
+    width: 95%;
+    margin: 0 auto;
+    border: #e5e5e5 solid 1px;
+    margin-bottom: 0px;
+    padding: 20px 0px 20px 0px;
+  }
+  .content__white_wrapper .quote__block {
+    padding: 20px 0px 20px 0px;
+    margin: 0px 20px;
+    background-color: #f1eeee;
+    border-radius: 20px;
+  }
+  .content__white_wrapper p {
+    padding: 0px 20px 0px 20px;
+    font-size: 16px;
+  }
+  .content__white_wrapper h2 {
+    margin: 0px 10px 0px 12.5px;
+  }
+  h2.mid-txt {
+    font-size: 1.2rem;
+  }
+  h2.mid-txt2 {
+    font-size: 1rem;
+  }
+  h2.small-txt {
+    font-size: 0.7rem;
+  }
+  .search-icon img {
+    height: 1rem;
+  }
+  .maru-image__wrapper img {
+    width: 12.5vw;
+  }
+  .content-image {
+    padding: 20px 20px;
+  }
+  .content-image_n02 {
+    padding: 20px 40px;
+  }
+  .content-image_n02 img {
+    width: 100%;
+  }
+  a.mid-txt {
+    font-size: 1rem;
+  }
+  a.small-txt {
+    font-size: 0.85rem;
+  }
+  p.mid-txt {
+    font-size: 0.8rem;
+  }
+  .mini-table__wrapper {
+    gap: 0px;
+    padding: 20px 10px;
+    height: 48vh;
+  }
+  .mini-table__wrapper table {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 42.5vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .mini-table__wrapper table tbody {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 0px;
+  }
+  .mini-table__wrapper table tbody tr {
+    width: 100%;
+  }
+  .mini-table__wrapper table tbody tr th {
+    border: rgba(0, 0, 0, 0) 1px solid;
+    border-radius: 15px 15px 0 0;
+    font-size: 2vh;
+    width: 33.3vw;
+    height: 5vh;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .mini-table__wrapper table tbody tr td {
+    width: 33.3vw;
+    display: table-cell;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.5;
+    vertical-align: baseline;
+    padding: 4px;
+    background-color: #ffffff;
+  }
+  .mini-table__wrapper table tbody tr td .mini-table_detail {
+    height: 20vh;
+  }
+  .mini-table__wrapper table tbody tr td a {
+    display: inline-block;
+  }
+  .mini-table__wrapper table tbody tr td .koushiki-site__btn_wrapper {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .mini-table__wrapper table tbody tr td .koushiki-site__btn_wrapper .kousiki-site__btn_block {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #23a566;
+    border-radius: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 4px solid darkgreen;
+  }
+  .mini-table__wrapper table tbody tr td .koushiki-site__btn_wrapper .kousiki-site__btn_block h2.mid-txt {
+    font-size: 0.5rem;
+  }
+  .mini-table__wrapper table tbody tr td .mini-table__company_wrapper {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .mini-table__wrapper table tbody tr td .mini-table__company_wrapper .mini-table__company-image_wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .mini-table__wrapper table tbody tr td .mini-table__company_wrapper .mini-table__company-image_wrapper img {
+    width: 100%;
+  }
+  .container--main {
+    font-size: 17px;
+    margin: 0 auto;
+    color: #333;
+    max-width: 100%;
+    background-color: none;
+    overflow: hidden;
+    overflow-x: hidden;
+  }
+  .section__wrapper .ranking-yellow__background .ranking-white__background .ranking-content__wrapper {
+    padding: 10px;
+  }
+  .section__wrapper .ranking-yellow__background .ranking-white__background .ranking-content__wrapper .content-image {
+    padding: 0px 0px;
+  }
+  .section__wrapper .hikakuhyo-table__wrapper {
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+  }
+  .section__wrapper .hikakuhyo-table__wrapper table.hikakuhyo-table tbody th {
+    padding: 10px;
+  }
+  .section__wrapper .hikakuhyo-table__wrapper table.hikakuhyo-table tbody .hikaku-image__wrapper img.logo-image {
+    width: 30vw;
+  }
+  .section__wrapper .hikakuhyo-table__wrapper table.hikakuhyo-table tbody .hikaku-image__wrapper img.cam-image {
+    width: 40vw;
+  }
+  .section__wrapper .hikakuhyo-table__wrapper table.hikakuhyo-table {
+    width: 360%;
+  }
+  .section__wrapper .ranking-yellow__background .ranking-white__background .ranking-table__wrapper table tr td .maru-image__wrapper img {
+    width: 10vw;
+  }
+
+}
+.search_wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.block-content {
+  width: 95%;
+}
+.block-content p {
+  padding: 10px 0px;
+}
+
+.img-description_flex {
+  display: flex;
+  flex-direction: row;
+  flex: 1 4;
+}
+@media (max-width: 768px) {
+  .img-description_flex {
+    flex: 1 1;
+    flex-direction: column;
+  }
+}
+
+.logo-image {
+  width: 200px;
+}
+
+.hikaku-image__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+.search_job-title {
+  font-size: 1.4rem;
+  color: #e94a4a;
+  padding: 13px;
+  display: block;
+  border-bottom: 4px solid;
+  margin-bottom: 10px;
+}
+
+table.search-table {
+  width: 100%;
+}
+table.search-table tbody, table.search-table td, table.search-table th {
+  text-align: center;
+  border: 1px solid #e9e9e9;
+  border-collapse: collapse;
+  padding: 5px;
+}
+@media (max-width: 768px) {
+  table.search-table tbody, table.search-table td, table.search-table th {
+    font-size: 0.7rem;
+  }
+}
+table.search-table td {
+  background-color: #ffe9e9;
+}
+table.search-table th {
+  background: #ee8989;
+}
+
+.c-white {
+  color: #fff;
+}
+
+.c-red {
+  color: #D04C67;
+}
+
+h2.mid-txt {
+  font-size: 1.3rem;
+}
+h2.mid-txt2 {
+  font-size: 1.15rem;
+}
+h2.small-txt {
+  font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+  h2.mid-txt {
+    font-size: 1.2rem;
+  }
+  h2.mid-txt2 {
+    font-size: 1rem;
+  }
+  h2.small-txt {
+    font-size: 0.7rem;
+  }
+}
+
+p.mid-txt {
+  font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+  p.mid-txt {
+    font-size: 0.8rem;
+  }
+}
+
+p.small-txt {
+  font-size: 11px;
+}
+
+a.mid-txt {
+  font-size: 1.2rem;
+}
+
+.bold {
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */

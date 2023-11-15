@@ -1,0 +1,45 @@
+// font
+@import '../Foundation/mixin.scss';
+
+
+h2 {
+    &.mid-txt {
+      font-size: 1.3rem;
+    }
+    &.mid-txt2 {
+      font-size: 1.15rem;
+    }
+    &.small-txt {
+      font-size: 1rem;
+    }
+    @include mobile{
+        &.mid-txt {
+            font-size: 1.2rem;
+        }
+        &.mid-txt2 {
+        font-size: 1rem;
+        }
+        &.small-txt {
+        font-size: 0.7rem;
+        }
+    }
+  }
+  
+  p.mid-txt {
+    font-size: 1rem;
+    @include mobile{
+     font-size:0.8rem;
+    }
+  }
+  p.small-txt{
+      font-size: 11px;
+  }
+  
+  a.mid-txt {
+    font-size: 1.2rem;
+  }
+  
+  .bold {
+    font-weight: bold;
+  }
+  

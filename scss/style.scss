@@ -1,0 +1,21 @@
+//style.scss
+
+// Foundation
+@use 'Foundation/_reset.scss';
+@use 'Foundation/_base.scss';
+@use 'Foundation/_mixin.scss';
+
+// Layout
+@use 'Layout/_footer.scss';
+@use 'Layout/_header.scss';
+
+// object
+// -Component
+@use 'Component/_btn.scss';
+@use 'Component/_inner.scss';
+// -Project
+@use 'Project/_about.scss';
+@use 'Project/_search.scss';
+// -Utility
+@use 'Utility/_color.scss';
+@use 'Utility/_font.scss';

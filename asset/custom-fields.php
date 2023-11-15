@@ -1,0 +1,33 @@
+<?php
+$ranking = get_field('ranking');
+$store_logo = get_field('store_logo');
+$store_link = get_field('store_link');
+$jisseki_kigou = get_field('jisseki_kigou');
+$jisseki_text = get_field('jisseki_text');
+$senmonsei_kigou = get_field('senmonsei_kigou');
+$senmonsei_text = get_field('senmonsei_text');
+$kaitoritenpo_kigou = get_field('kaitoritenpo_kigou');
+$kaitoritenpo_text = get_field('kaitoritenpo_text');
+$shinsain_kigou = get_field('shinsain_kigou');
+$shinsain_text = get_field('shinsain_text');
+$zenkokitaiou_kigou = get_field('zenkokitaiou_kigou');
+$zenkokitaiou_text = get_field('zenkokitaiou_text');
+$genkinsokubarai_kigou = get_field('genkinsokubarai_kigou');
+$genkinsokubarai_text = get_field('genkinsokubarai_text');
+$kuchikomi_kigou = get_field('kuchikomi_kigou');
+$kuchikomi_text = get_field('kuchikomi_text');
+$hikaku_point_kigou = get_field('hikaku_point_kigou');
+$hikaku_point_text = get_field('hikaku_point_text');
+$store_name = get_field('store_name');
+$campaign_img = get_field('campaign_img');
+$campaign_red_text = get_field('campaign_red_text');
+$ranking_description = get_field('ranking_description');
+$ranking_image_frame = get_field('ranking_image_frame');
+$ranking_kaitori_image = get_field('ranking_kaitori_image');
+$senmon = get_field('senmon');
+$speed = get_field('speed');
+$syuttyou = get_field('syuttyou');
+$genkin = get_field('genkin');
+$denwa = get_field('denwa');
+?>
+<!-- $custom_fields['フィールド名']で呼び出し -->

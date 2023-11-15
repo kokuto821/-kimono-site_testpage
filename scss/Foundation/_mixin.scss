@@ -1,0 +1,10 @@
+// mixin
+
+// breakpoint
+$mb: 768px;
+// @mediaのフォーマット
+@mixin mobile{
+    @media screen and (max-width: $mb){
+        @content;
+    }
+}

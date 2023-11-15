@@ -1,0 +1,15 @@
+.block-footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: #f1eeee;
+    .block-footer__link{
+      padding: 0px 10px;
+      .footer-link{
+        color: #333;
+        font-weight: bold;
+      }
+    }
+  }
