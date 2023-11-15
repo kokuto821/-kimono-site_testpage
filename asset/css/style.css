@@ -370,6 +370,11 @@ button {
   fill: #fff;
   height: 1.2rem;
 }
+@media screen and (max-width: 768px) {
+  .search-icon img {
+    height: 1rem;
+  }
+}
 
 .block-button__icon {
   margin: 0 auto;
@@ -412,6 +417,11 @@ button {
 }
 .maru-image__wrapper img {
   width: 4.5vw;
+}
+@media screen and (max-width: 768px) {
+  .maru-image__wrapper img {
+    width: 12.5vh;
+  }
 }
 
 .text-subtitle {
@@ -527,6 +537,11 @@ a.small-txt {
   text-align: center;
   vertical-align: middle;
 }
+@media screen and (max-width: 768px) {
+  .block-sections .block-table table.block-table__inner tbody th {
+    padding: 2vw 0px;
+  }
+}
 .block-sections .block-table table.block-table__inner tbody td {
   border: 1px solid #f1eeee;
   border-collapse: collapse;
@@ -539,6 +554,7 @@ a.small-txt {
 }
 .block-sections .block-table table.block-table__inner tbody td.first-block {
   background-color: #ffe8e8;
+  padding: 0px;
 }
 .block-sections .block-table table.block-table__inner tbody td .koushiki-site__btn_wrapper .kousiki-site__btn_block {
   width: 100%;
@@ -548,6 +564,11 @@ a.small-txt {
   display: flex;
   justify-content: center;
   border-bottom: 4px solid #780018;
+}
+@media screen and (max-width: 768px) {
+  .block-sections .block-table table.block-table__inner tbody td .koushiki-site__btn_wrapper .kousiki-site__btn_block {
+    width: 35vw;
+  }
 }
 .block-sections .block-table table.block-table__inner tbody td .koushiki-site__btn_wrapper .kousiki-site__btn_block:hover {
   opacity: 0.7;
@@ -566,6 +587,11 @@ a.small-txt {
 }
 .block-sections .block-table table.block-table__inner tbody .hikaku-image__wrapper img.logo-image {
   width: 10vw;
+}
+@media screen and (max-width: 768px) {
+  .block-sections .block-table table.block-table__inner tbody .hikaku-image__wrapper img.logo-image {
+    width: 35vw;
+  }
 }
 .block-sections .block-table table.block-table__inner tbody .hikaku-image__wrapper img.cam-image {
   width: 10vw;
@@ -774,12 +800,12 @@ a.small-txt {
   p.mid-txt {
     font-size: 0.8rem;
   }
-  .mini-table__wrapper {
+  .block-mini-table {
     gap: 0px;
     padding: 20px 10px;
     height: 48vh;
   }
-  .mini-table__wrapper table {
+  .block-mini-table table {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -787,17 +813,17 @@ a.small-txt {
     justify-content: center;
     align-items: center;
   }
-  .mini-table__wrapper table tbody {
+  .block-mini-table table tbody {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     width: 100%;
     gap: 0px;
   }
-  .mini-table__wrapper table tbody tr {
+  .block-mini-table table tbody tr {
     width: 100%;
   }
-  .mini-table__wrapper table tbody tr th {
+  .block-mini-table table tbody tr th {
     border: rgba(0, 0, 0, 0) 1px solid;
     border-radius: 15px 15px 0 0;
     font-size: 2vh;
@@ -806,7 +832,7 @@ a.small-txt {
     display: table-cell;
     vertical-align: middle;
   }
-  .mini-table__wrapper table tbody tr td {
+  .block-mini-table table tbody tr td {
     width: 33.3vw;
     display: table-cell;
     text-align: center;
@@ -816,17 +842,17 @@ a.small-txt {
     padding: 4px;
     background-color: #ffffff;
   }
-  .mini-table__wrapper table tbody tr td .mini-table_detail {
+  .block-mini-table table tbody tr td .mini-table_detail {
     height: 20vh;
   }
-  .mini-table__wrapper table tbody tr td a {
+  .block-mini-table table tbody tr td a {
     display: inline-block;
   }
-  .mini-table__wrapper table tbody tr td .koushiki-site__btn_wrapper {
+  .block-mini-table table tbody tr td .koushiki-site__btn_wrapper {
     width: 80%;
     margin: 0 auto;
   }
-  .mini-table__wrapper table tbody tr td .koushiki-site__btn_wrapper .kousiki-site__btn_block {
+  .block-mini-table table tbody tr td .koushiki-site__btn_wrapper .kousiki-site__btn_block {
     width: 100%;
     position: relative;
     overflow: hidden;
@@ -837,24 +863,24 @@ a.small-txt {
     justify-content: center;
     border-bottom: 4px solid darkgreen;
   }
-  .mini-table__wrapper table tbody tr td .koushiki-site__btn_wrapper .kousiki-site__btn_block h2.mid-txt {
+  .block-mini-table table tbody tr td .koushiki-site__btn_wrapper .kousiki-site__btn_block h2.mid-txt {
     font-size: 0.5rem;
   }
-  .mini-table__wrapper table tbody tr td .mini-table__company_wrapper {
+  .block-mini-table table tbody tr td .mini-table__company_wrapper {
     height: 10vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .mini-table__wrapper table tbody tr td .mini-table__company_wrapper .mini-table__company-image_wrapper {
+  .block-mini-table table tbody tr td .mini-table__company_wrapper .mini-table__company-image_wrapper {
     display: flex;
     justify-content: center;
   }
-  .mini-table__wrapper table tbody tr td .mini-table__company_wrapper .mini-table__company-image_wrapper img {
+  .block-mini-table table tbody tr td .mini-table__company_wrapper .mini-table__company-image_wrapper img {
     width: 100%;
   }
-  .container--main {
+  .container {
     font-size: 17px;
     margin: 0 auto;
     color: #333;
@@ -863,30 +889,30 @@ a.small-txt {
     overflow: hidden;
     overflow-x: hidden;
   }
-  .section__wrapper .ranking-yellow__background .ranking-white__background .ranking-content__wrapper {
+  .block-sections .ranking-yellow__background .ranking-white__background .ranking-content__wrapper {
     padding: 10px;
   }
-  .section__wrapper .ranking-yellow__background .ranking-white__background .ranking-content__wrapper .content-image {
+  .block-sections .ranking-yellow__background .ranking-white__background .ranking-content__wrapper .content-image {
     padding: 0px 0px;
   }
-  .section__wrapper .hikakuhyo-table__wrapper {
+  .block-sections .hikakuhyo-table__wrapper {
     display: block;
     width: 100%;
     overflow-x: scroll;
   }
-  .section__wrapper .hikakuhyo-table__wrapper table.hikakuhyo-table tbody th {
+  .block-sections .hikakuhyo-table__wrapper table.hikakuhyo-table tbody th {
     padding: 10px;
   }
-  .section__wrapper .hikakuhyo-table__wrapper table.hikakuhyo-table tbody .hikaku-image__wrapper img.logo-image {
+  .block-sections .hikakuhyo-table__wrapper table.hikakuhyo-table tbody .hikaku-image__wrapper img.logo-image {
     width: 30vw;
   }
-  .section__wrapper .hikakuhyo-table__wrapper table.hikakuhyo-table tbody .hikaku-image__wrapper img.cam-image {
+  .block-sections .hikakuhyo-table__wrapper table.hikakuhyo-table tbody .hikaku-image__wrapper img.cam-image {
     width: 40vw;
   }
-  .section__wrapper .hikakuhyo-table__wrapper table.hikakuhyo-table {
+  .block-sections .hikakuhyo-table__wrapper table.hikakuhyo-table {
     width: 360%;
   }
-  .section__wrapper .ranking-yellow__background .ranking-white__background .ranking-table__wrapper table tr td .maru-image__wrapper img {
+  .block-sections .ranking-yellow__background .ranking-white__background .ranking-table__wrapper table tr td .maru-image__wrapper img {
     width: 10vw;
   }
 
@@ -982,7 +1008,7 @@ h2.small-txt {
     font-size: 1rem;
   }
   h2.small-txt {
-    font-size: 0.7rem;
+    font-size: 0.85rem;
   }
 }
 

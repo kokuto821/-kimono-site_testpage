@@ -231,6 +231,9 @@
         transform: translateY(0.15vh);
         fill: #fff;
         height: 1.2rem;
+        @include mobile{
+            height: 1rem;
+        }
     }
 }
 
@@ -273,6 +276,9 @@
 
     img {
         width: 4.5vw;
+        @include mobile{
+            width: 12.5vh;
+        }
     }
 }
 .fixed01 {
@@ -397,6 +403,9 @@ a {
                     display: table-cell;
                     text-align: center;
                     vertical-align: middle;
+                    @include mobile{
+                        padding: 2vw 0px;
+                    }
                 }
 
                 td {
@@ -410,6 +419,7 @@ a {
                     background-color: #ffffff;
                     &.first-block {
                         background-color: #ffe8e8;
+                        padding: 0px;
                     }
 
                     .koushiki-site__btn_wrapper .kousiki-site__btn_block {
@@ -420,6 +430,9 @@ a {
                         display: flex;
                         justify-content: center;
                         border-bottom: 4px solid #780018;
+                        @include mobile{
+                            width: 35vw;
+                        }
                     }
                     .koushiki-site__btn_wrapper .kousiki-site__btn_block:hover {
                         opacity: 0.7;
@@ -439,6 +452,9 @@ a {
                     align-items: center;
                     img.logo-image {
                         width: 10vw;
+                        @include mobile{
+                            width: 35vw;
+                        }
                     }
                     img.cam-image {
                         width: 10vw;
@@ -694,7 +710,7 @@ a {
             font-size: 0.8rem;
         }
     }
-    .mini-table__wrapper {
+    .block-mini-table {
         gap: 0px;
         padding: 20px 10px;
         height: 48vh;
@@ -793,7 +809,7 @@ a {
     }
 
     ////////////////////////////////////////////////////////////
-    .container--main {
+    .container {
         font-size: 17px;
         margin: 0 auto;
         color: #333;
@@ -802,7 +818,7 @@ a {
         overflow: hidden;
         overflow-x: hidden;
     }
-    .section__wrapper {
+    .block-sections {
         .ranking-yellow__background {
             .ranking-white__background {
                 .ranking-content__wrapper {
@@ -847,7 +863,7 @@ a {
             }
         }
     }
-    .section__wrapper {
+    .block-sections {
         .hikakuhyo-table__wrapper table.hikakuhyo-table {
             width: 360%;
         }

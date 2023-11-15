@@ -33,6 +33,6 @@
 </head>
 <body class="body">
     <div class="article">
-        <div class="container--main">
+        <div class="container">
         <div class="header-cover"><a href="<?php echo esc_url(home_url('/')); ?>"><h2 class="mid-text">買取王国</h2></a></div>
         <main class="block-sections">
